@@ -1,0 +1,70 @@
+/* General Styles */
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #ededed;
+    /* Light blue background */
+}
+
+.head {
+    border-top: 30px dashed #403f3f;
+    border-bottom: 30px solid #242323;
+    background: rgb(171, 124, 62);
+    padding: 70px 30px;
+    border-radius: 40%;
+}
+
+/* Container for Eyes */
+.eyes {
+    display: flex;
+    gap: 30px;
+    /* Space between the two eyes */
+}
+
+/* Eye */
+.eye {
+    position: relative;
+    width: 50px;
+    height: 50px;
+    background-color: #fff;
+    border-radius: 80%;
+    border-top: 10px solid #000;
+    border-bottom: 10px solid #000;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Pupil */
+.pupil {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    background-color: #6f5bbc;
+    border-radius: 50%;
+}
+
+.nose {
+    display: flex;
+    justify-self: center;
+    margin-top: 10px;
+    background-color: rgb(232, 230, 230);
+    width: 20px;
+    height: 20px;
+}
+
+.mouth {
+    display: flex;
+    justify-self: center;
+    margin-top: 30px;
+    border-top: 10px solid #e18484;
+    border-bottom: 10px solid #e18484;
+    background-color: white;
+    width: 80px;
+    height: 20px;
+}
