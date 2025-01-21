@@ -5,15 +5,18 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: #ededed;
+    background: #f9efef;
     /* Light blue background */
 }
 
 .head {
-    border-top: 30px dashed #403f3f;
-    border-bottom: 30px solid #242323;
-    background: rgb(171, 124, 62);
-    padding: 70px 30px;
+    border-top: 80px solid #050202;
+    border-bottom: 20px solid #413f3f;
+    background: rgb(154, 117, 68);
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 40px;
+    padding-bottom: 30px;
     border-radius: 40%;
 }
 
@@ -31,8 +34,7 @@ body {
     height: 50px;
     background-color: #fff;
     border-radius: 80%;
-    border-top: 10px solid #000;
-    border-bottom: 10px solid #000;
+    border-top: 5px solid #000;
 
     display: flex;
     justify-content: center;
@@ -64,6 +66,91 @@ body {
     margin-top: 30px;
     border-top: 10px solid #e18484;
     border-bottom: 10px solid #e18484;
+    border-bottom-right-radius: 50%;
+    border-bottom-left-radius: 50%;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    background-color: white;
+    width: 80px;
+    height: 20px;
+}
+
+
+
+.female-head {
+    margin-left: 60px;
+    background: rgb(233, 189, 118); /* Skin color */
+    border-radius: 40%; /* Head shape */
+    padding: 50px 30px 40px 30px; /* Adjust to fit head shape */
+    position: relative; /* Needed for positioning the afro */
+}
+
+.female-head::before {
+    content: "";
+    position: absolute;
+    top: -140px; /* Position the afro above the head */
+    left: -50px; /* Center the afro */
+    width: 300px; /* Size of the afro */
+    height: 300px; /* Make it circular */
+    background: rgb(41, 39, 39); /* Afro hair color */
+    border-radius: 50%; /* Circle shape */
+    z-index: -1; /* Ensure it appears behind the head */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5); /* Optional: Add texture */
+}
+
+
+/* Container for Eyes */
+.female-eyes {
+    display: flex;
+    gap: 30px;
+    /* Space between the two eyes */
+}
+
+/* Eye */
+.female-eye {
+    position: relative;
+    width: 50px;
+    height: 50px;
+    background-color: #fff;
+    border-radius: 80%;
+    border-top: 10px solid #666565;
+    border-bottom: 10px solid #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Pupil */
+.female-pupil {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    background-color: #e16cb6;
+    border-radius: 50%;
+}
+
+.female-nose {
+    display: flex;
+    justify-self: center;
+    margin-top: 10px;
+    border-top-left-radius: 40%;
+    border-top-right-radius: 40%;
+    background-color: rgb(254, 251, 251);
+    width: 20px;
+    height: 20px;
+}
+
+.female-mouth {
+    display: flex;
+    justify-self: center;
+    margin-top: 30px;
+    border-top: 20px solid #eb5b5b;
+    border-bottom: 10px solid #ec4d4d;
+    border-bottom-right-radius: 50%;
+    border-bottom-left-radius: 50%;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
     background-color: white;
     width: 80px;
     height: 20px;
